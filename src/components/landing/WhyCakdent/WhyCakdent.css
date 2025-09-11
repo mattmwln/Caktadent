@@ -1,0 +1,122 @@
+.why-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.why-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #041741;
+  letter-spacing: -0.5px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.faq-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: #041741;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.faq-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.faq-button:hover {
+  color: #22c55e;
+}
+
+.faq-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-toggle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #9ca3af;
+  transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.faq-toggle.open {
+  transform: rotate(180deg);
+  color: #22c55e;
+}
+
+/* Konten FAQ dengan animasi smooth */
+.faq-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  color: #d1d5db;
+  line-height: 1.7;
+  font-size: 1rem;
+  border-top: 1px solid transparent;
+  transform: translateY(-8px);
+  transition: 
+    max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    padding 0.4s ease,
+    border-top 0.4s ease;
+}
+
+.faq-content.open {
+  max-height: 500px; /* cukup besar */
+  opacity: 1;
+  padding: 1rem 1.5rem 1.2rem;
+  transform: translateY(0);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .why-title {
+    font-size: 2rem;
+  }
+
+  .faq-button {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .faq-content {
+    font-size: 0.95rem;
+  }
+}

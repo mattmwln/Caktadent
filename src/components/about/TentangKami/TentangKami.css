@@ -1,0 +1,121 @@
+/* Container utama */
+.tentang-section {
+  width: 100%;
+  padding: 150px 20px;
+ 
+}
+
+.tentang-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Card 2 kolom */
+.tentang-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  /* gradient background */
+  background: linear-gradient(135deg, #041741, rgba(24, 47, 255, 0.6));
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 3rem;
+  border-radius: 16px;
+}
+
+/* Kolom kiri (teks) */
+.tentang-left {
+  flex: 1;
+  text-align: justify;
+}
+
+.tentang-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #2e7d32; /* aksen hijau */
+  padding-left: 15px;
+}
+
+.tentang-desc {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Kolom kanan (logo) */
+.tentang-right {
+  flex: 0 0 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.tentang-logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  padding: 10px;
+  background: #fafafa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tentang-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsif tablet */
+@media (max-width: 992px) {
+  .tentang-card {
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .tentang-title {
+    font-size: 2rem;
+  }
+
+  .tentang-desc {
+    font-size: 1rem;
+  }
+
+  .tentang-right {
+    flex: 0 0 250px;
+  }
+}
+
+/* Responsif mobile */
+@media (max-width: 768px) {
+  .tentang-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .tentang-left {
+    text-align: justify;
+  }
+
+  .tentang-right {
+    margin-top: 1.5rem;
+    flex: unset;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tentang-logo {
+    max-width: 200px;
+  }
+
+  .tentang-title {
+    font-size: 1.8rem;
+    border-left: none;
+    padding-left: 0;
+  }
+}
