@@ -55,7 +55,7 @@ const Hero = () => {
 
         
 
-        <Link to={'/text-animations/split-text'} className="landing-button">
+        <Link className="landing-button">
           <span>Organic Extract</span>
           <div className="button-arrow-circle">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">

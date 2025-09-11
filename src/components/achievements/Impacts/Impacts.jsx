@@ -29,28 +29,28 @@ const Impact = () => {
       <h1>Our Impacts</h1>
       <div className="impact-grid">
         <ImpactCard
-          number={100}
+          number={90}
           suffix="kg"
           title="Cangkang telur"
           desc="Berhasil diolah menjadi bahan bermanfaat."
           isMobile={isMobile}
         />
         <ImpactCard
-          number={100}
+          number={370}
           suffix="L"
           title="Minyak jelantah"
           desc="Diolah kembali, mengurangi pencemaran lingkungan."
           isMobile={isMobile}
         />
         <ImpactCard
-          number={50}
+          number={30}
           suffix="+"
           title="Keluarga lokal"
           desc="Ikut serta dalam pengumpulan limbah rumah tangga."
           isMobile={isMobile}
         />
         <ImpactCard
-          number={100}
+          number={350}
           suffix="+"
           title="Senyum sehat"
           desc="Terjaga lewat penggunaan Caktadent."

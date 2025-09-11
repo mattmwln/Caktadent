@@ -8,8 +8,8 @@ import "./ImpactStats.css";
 
 const data = [
   { year: "2022", telur: 25, minyak: 105, keluarga: 10, senyum: 100 },
-  { year: "2023", telur: 50, minyak: 210, keluarga: 10, senyum: 200 },
-  { year: "2024", telur: 90, minyak: 370, keluarga: 10, senyum: 350 },
+  { year: "2023", telur: 50, minyak: 210, keluarga: 20, senyum: 200 },
+  { year: "2024", telur: 90, minyak: 370, keluarga: 30, senyum: 350 },
 ];
 
 const ImpactStats = () => {
